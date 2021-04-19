@@ -1,0 +1,12 @@
+// hero
+.hero{
+  height:70vh;
+  background-image: url("../img/hero.jpg");
+  background-position: top;
+  background-size: cover;
+  .text-box{
+    height:100%;
+    background: rgb(255,255,255);
+    background: linear-gradient(270deg, rgba(255,255,255,0) 0%, rgba(6,6,6,1) 58%);
+  }
+}

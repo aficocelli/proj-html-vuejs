@@ -161,11 +161,43 @@ header {
   top: -50px;
 }
 .features .box .box-img {
-  height: 200px;
   width: calc((100% / 3) - 80px);
-  background-color: yellow;
-  border: 1px solid black;
+  border-radius: 5px 5px 40px 5px;
+  position: relative;
+}
+.features .box .box-img img {
+  width: 100%;
+  display: block;
+  border-radius: 5px 5px 40px 5px;
+}
+.features .box .box-img .text-img {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: #00000054;
+  border-radius: 5px 5px 40px 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 20px;
+}
+.features .box .box-img .text-img h3 {
+  color: #fff;
+}
+.features .box .box-img .text-img p {
+  color: #FFF941;
 }
 .features .box .box-img:nth-of-type(2) {
   margin: 0 40px;
+}
+.features .cit {
+  width: 750px;
+  margin: 0 auto;
+}
+.features .cit p {
+  font-size: 32px;
+  color: #fff;
+  text-align: center;
 }

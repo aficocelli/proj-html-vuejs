@@ -1,0 +1,25 @@
+// mani nav layout
+.container-md{
+  width: $midContainer;
+  margin:0 auto;
+}
+header{
+  background-color: $dark-grey
+}
+.navbar{
+  display:flex;
+  align-items:center;
+  .logo {
+    width:200px;
+    & img{
+      width:100%;
+      
+    }
+  }
+  .navigation{
+    width:400px;
+    height:100px;
+    background-color: red;
+    margin:0 auto;
+  }
+}

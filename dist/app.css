@@ -1,1 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+.container-md {
+  width: 1080px;
+  margin: 0 auto;
+}
+
+header {
+  background-color: #060606;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+}
+.navbar .logo {
+  width: 200px;
+}
+.navbar .logo img {
+  width: 100%;
+}
+.navbar .navigation {
+  width: 400px;
+  height: 100px;
+  background-color: red;
+  margin: 0 auto;
+}

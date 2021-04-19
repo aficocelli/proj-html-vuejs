@@ -13,8 +13,57 @@
     <title>Document</title>
   </head>
   <body>
+    <!-- root container -->
+    <div class="full-container" id="root">
+      <!-- header -->
+      <header>
+        <!-- middle container -->
+        <div class="container-md">
+          <!-- main nav -->
+          <nav class="navbar">
 
+            <!-- logo -->
+            <div class="logo">
+              <img :src="'img/' + logo" alt="logo">
+            </div>
+            <!-- /logo -->
 
+            <!-- main navigation -->
+            <div class="navigation">
+              <!-- dynamic main menu -->
+              <div class="main-menu">
+                <ul>
+                  <li></li>
+                </ul>
+              </div>
+              <!-- /dynamic main menu -->
+
+              <!-- shop and search -->
+              <div class="shop"></div>
+              <!-- /shop and search -->
+            </div>
+            <!-- /main navigation -->
+          </nav>
+          <!-- /main nav -->
+          <!-- hero -->
+          <div class="hero">
+
+          </div>
+          <!-- /hero -->
+        </div>
+        <!-- /middle container -->
+      </header>
+      <!-- /header -->
+
+      <!-- main -->
+      <main></main>
+      <!-- /main -->
+
+      <!-- footer -->
+      <footer></footer>
+      <!-- /footer -->
+    </div>
+    <!-- /root container -->
 
     <!-- js -->
     <script src="dist/script.js" charset="utf-8"></script>

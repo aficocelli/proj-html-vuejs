@@ -195,9 +195,28 @@ header {
 .features .cit {
   width: 750px;
   margin: 0 auto;
+  text-align: center;
 }
 .features .cit p {
   font-size: 32px;
   color: #fff;
   text-align: center;
+}
+.features .cit img {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+.features .cit img, .features .cit span {
+  vertical-align: middle;
+}
+.features .cit span:first-of-type {
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+}
+.features .cit span:last-of-type {
+  color: #78787a;
+  font-size: 14px;
+  font-weight: bold;
 }

@@ -49,10 +49,29 @@
   .cit{
     width:750px;
     margin: 0 auto;
+    text-align: center;
     p{
       font-size:$text-m;
       color:$white;
       text-align: center;
+    }
+    img{
+      height:50px;
+      width:50px;
+      border-radius:50%;
+    }
+    img, span{
+      vertical-align: middle;
+    }
+    span:first-of-type{
+      color:$white;
+      font-size:$text-xs;
+      font-weight: bold;
+    }
+    span:last-of-type{
+      color:$textGray;
+      font-size:$text-xs;
+      font-weight: bold;
     }
   }
 

@@ -5,8 +5,38 @@
   background-position: top;
   background-size: cover;
   .text-box{
+    display:flex;
+    align-items: center;
     height:100%;
     background: rgb(255,255,255);
     background: linear-gradient(270deg, rgba(255,255,255,0) 0%, rgba(6,6,6,1) 58%);
+    .text-hero{
+      width:$midContainer;
+      margin:0 auto;
+      h2{
+        color:$supTitle;
+        font-size:$text-s;
+      }
+      h1{
+        font-size:$text-l;
+        color:$white;
+        margin: $mg 0;
+      }
+      p{
+        font-size:$text-xs;
+        color:$textGray;
+        margin: $mg 0;
+      }
+      a{
+        font-size:$text-xs;
+        margin-right:10px;
+      }
+      .play-btn{
+        position: absolute;
+        top: 50%;
+        right: 20%;
+        transform: translateY(-50%)
+      }
+    }
   }
 }

@@ -9,17 +9,36 @@ header{
 .navbar{
   display:flex;
   align-items:center;
+  height:80px;
   .logo {
-    width:200px;
+    width:150px;
     & img{
       width:100%;
-      
+
     }
   }
   .navigation{
-    width:400px;
-    height:100px;
-    background-color: red;
+    display:flex;
+    align-items: center;
     margin:0 auto;
+    .main-menu ul{
+      display:flex;
+      align-items: center;
+      list-style-type: none;
+      li{
+        margin: 0 $mg;
+        font-size:$text-xs;
+        & a:hover{
+          color:$white;
+        }
+      }
+    }
+    .shop a{
+      margin-right:$mg;
+      font-size:$text-xs;
+      &:hover{
+        color:$white;
+      }
+    }
   }
 }

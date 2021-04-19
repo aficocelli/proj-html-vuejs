@@ -4,6 +4,32 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #78787a;
+}
+
+.blue-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  color: #fff;
+  border-radius: 10px;
+  background-color: #4154fe;
+}
+
+.new {
+  color: #060606;
+  background-color: #FFF941;
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 12px;
+  margin-left: 5px;
+}
+
 .container-md {
   width: 1080px;
   margin: 0 auto;
@@ -16,16 +42,35 @@ header {
 .navbar {
   display: flex;
   align-items: center;
+  height: 80px;
 }
 .navbar .logo {
-  width: 200px;
+  width: 150px;
 }
 .navbar .logo img {
   width: 100%;
 }
 .navbar .navigation {
-  width: 400px;
-  height: 100px;
-  background-color: red;
+  display: flex;
+  align-items: center;
   margin: 0 auto;
+}
+.navbar .navigation .main-menu ul {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+}
+.navbar .navigation .main-menu ul li {
+  margin: 0 20px;
+  font-size: 14px;
+}
+.navbar .navigation .main-menu ul li a:hover {
+  color: #fff;
+}
+.navbar .navigation .shop a {
+  margin-right: 20px;
+  font-size: 14px;
+}
+.navbar .navigation .shop a:hover {
+  color: #fff;
 }

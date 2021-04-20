@@ -232,11 +232,6 @@ header {
 .youtube {
   display: flex;
 }
-.youtube .yt-videos, .youtube .yt-text {
-  height: 200px;
-  width: 200px;
-  background-color: red;
-}
 .youtube .yt-videos {
   position: relative;
   top: -50px;
@@ -267,4 +262,58 @@ header {
   left: 0;
   background-color: #00000054;
   border-radius: 5px 5px 40px 5px;
+}
+.youtube .yt-text {
+  padding: 50px;
+  margin-left: 80px;
+  margin-top: 80px;
+}
+.youtube .yt-text h3 {
+  color: #4154fe;
+  font-size: 24px;
+}
+.youtube .yt-text h2 {
+  font-size: 46px;
+  color: #000;
+  margin: 20px 0;
+}
+.youtube .yt-text p {
+  font-size: 14px;
+  color: #78787a;
+  margin: 20px 0;
+}
+.youtube .yt-text .youtube-btn {
+  font-size: 14px;
+  margin-right: 10px;
+  background-color: #FF0000;
+}
+.youtube .yt-text .youtube-btn:hover {
+  background-color: #4154fe;
+}
+.youtube .yt-text .yt-icon {
+  display: flex;
+  align-items: center;
+}
+.youtube .yt-text .yt-icon img {
+  height: 30px;
+}
+.youtube .yt-text .yt-icon p {
+  margin: 5px 10px;
+}
+.youtube .yt-text .yt-icon p:first-of-type {
+  font-size: 10px;
+}
+.youtube .yt-text .yt-icon span {
+  color: #fff;
+  background-color: #FF0000;
+  padding: 2px;
+  border: 1px solid #FF0000;
+  font-size: 10px;
+}
+.youtube .yt-text .yt-icon .views {
+  background-color: #fff;
+  color: grey;
+  border: 1px solid lightgrey;
+  margin-left: -4px;
+  font-size: 10px;
 }

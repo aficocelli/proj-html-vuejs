@@ -322,3 +322,26 @@
     }
   }
 }
+
+// article section
+
+.article{
+  .container{
+    .videos-playlist{
+      .img-videos{
+        border-radius:none;
+        img{
+          border-radius:0 0 0 0;
+        }
+      }
+      .text-img{
+        padding: 20px;
+        text-align: left;
+        p{
+          color:$textGrey;
+        }
+      }
+    }
+  }
+
+}

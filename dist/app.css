@@ -458,3 +458,17 @@ header {
 .box-icons .container .box a i {
   margin-left: 10px;
 }
+
+.article .container .videos-playlist .img-videos {
+  border-radius: none;
+}
+.article .container .videos-playlist .img-videos img {
+  border-radius: 0 0 0 0;
+}
+.article .container .videos-playlist .text-img {
+  padding: 20px;
+  text-align: left;
+}
+.article .container .videos-playlist .text-img p {
+  color: #78787a;
+}

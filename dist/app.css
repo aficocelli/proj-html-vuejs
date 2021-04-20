@@ -412,3 +412,18 @@ header {
 .mailing-list .mailing-hero .text-box .text-hero a {
   padding: 10px 50px;
 }
+
+.box-icons {
+  padding: 50px 0;
+}
+.box-icons .container {
+  width: 1080px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.box-icons .container .box {
+  width: calc((100% / 3) - 40px);
+  height: 500px;
+  background-color: red;
+}

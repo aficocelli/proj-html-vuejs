@@ -522,7 +522,7 @@ header {
 
 .gym .container {
   width: 1080px;
-  margin: 50px auto;
+  margin: 80px auto;
 }
 .gym .container .gym-box {
   display: flex;
@@ -531,5 +531,22 @@ header {
 .gym .container .gym-box .box {
   width: calc((100% / 4) - 40px);
   height: 200px;
-  background-color: red;
+  text-align: center;
+}
+.gym .container .gym-box .box .sponsor-img {
+  width: 50%;
+  margin: 0 auto;
+}
+.gym .container .gym-box .box .sponsor-img img {
+  width: 100%;
+}
+.gym .container .gym-box .box p {
+  font-size: 14px;
+  color: #78787a;
+}
+.gym .container .gym-box .box a {
+  font-size: 14px;
+  color: #000;
+  margin-top: 20px;
+  display: inline-block;
 }

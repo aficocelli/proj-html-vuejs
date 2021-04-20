@@ -395,14 +395,31 @@
 .gym{
   .container{
     width:$midContainer;
-    margin: 50px auto;
+    margin: 80px auto;
     .gym-box{
       display:flex;
       justify-content: space-between;
       .box{
         width:calc((100% / 4) - 40px);
         height:200px;
-        background-color:red;
+        text-align:center;
+        .sponsor-img{
+          width:50%;
+          margin:0 auto;
+          img{
+            width:100%;
+          }
+        }
+        p{
+          font-size:$text-xs;
+          color:$textGrey;
+        }
+        a{
+          font-size:$text-xs;
+          color:$black;
+          margin-top: $mg;
+          display:inline-block;
+        }
       }
     }
   }

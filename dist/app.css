@@ -550,3 +550,48 @@ header {
   margin-top: 20px;
   display: inline-block;
 }
+
+.crossfit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+  background-image: url("../img/banner3.jpg");
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+.crossfit::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: #00000054;
+  background: #190046;
+  background: linear-gradient(140deg, rgba(25, 0, 70, 0.6867121849) 75%, rgba(138, 0, 57, 0.6474964986) 90%);
+}
+.crossfit .box {
+  z-index: 1;
+  text-align: center;
+}
+.crossfit .box h3 {
+  font-size: 32px;
+  color: #fff;
+  margin: 20px 0;
+}
+.crossfit .box p {
+  color: #FFF941;
+  font-size: 24px;
+  margin: 20px 0;
+}
+.crossfit .box a {
+  color: #fff;
+  font-size: 14px;
+}
+.crossfit .box button {
+  height: 60px;
+  width: 60px;
+}

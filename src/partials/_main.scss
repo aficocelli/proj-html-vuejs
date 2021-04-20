@@ -424,3 +424,46 @@
     }
   }
 }
+
+
+// crossfit section
+
+.crossfit{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  height:70vh;
+  background-image: url('../img/banner3.jpg');
+  background-position: center;
+  background-size: cover;
+  position:relative;
+  &::after{
+    content:"";
+    display:block;
+    @include absolute-obj;
+    background: rgb(25,0,70);
+    background: linear-gradient(140deg, rgba(25,0,70,0.6867121848739496) 75%, rgba(138,0,57,0.6474964985994398) 90%);
+  }
+  .box{
+    z-index:1;
+    text-align: center;
+    h3{
+      font-size:$text-m;
+      color:$white;
+      margin:$mg 0;
+    }
+    p{
+      color:$yellow;
+      font-size:$text-s;
+      margin:$mg 0;
+    }
+    a{
+      color:$white;
+      font-size:$text-xs;
+    }
+    button{
+      height:60px;
+      width:60px;
+    }
+  }
+}

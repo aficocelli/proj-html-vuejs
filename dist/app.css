@@ -415,6 +415,7 @@ header {
 
 .box-icons {
   padding: 50px 0;
+  background-color: #060606;
 }
 .box-icons .container {
   width: 1080px;
@@ -425,5 +426,12 @@ header {
 .box-icons .container .box {
   width: calc((100% / 3) - 40px);
   height: 500px;
-  background-color: red;
+  border: 4px solid #4154fe;
+  border-radius: 5px;
+  padding: 20px;
+  color: #fff;
+  text-align: center;
+}
+.box-icons .container .box > i {
+  font-size: 46px;
 }

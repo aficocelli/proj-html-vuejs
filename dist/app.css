@@ -376,3 +376,39 @@ header {
   font-size: 12px;
   color: #4154fe;
 }
+
+.mailing-list .mailing-hero {
+  background-image: url("../img/banner.jpg");
+}
+.mailing-list .mailing-hero .container {
+  width: 1080px;
+  margin: 0 auto;
+}
+.mailing-list .mailing-hero .text-box .text-hero {
+  margin-left: 10%;
+  width: 60%;
+  margin: 0 0;
+}
+.mailing-list .mailing-hero .text-box .text-hero h2 {
+  font-size: 46px;
+  color: #fff;
+  margin: 20px 0;
+}
+.mailing-list .mailing-hero .text-box .text-hero h3 {
+  color: 32px;
+  color: #bc0428;
+}
+.mailing-list .mailing-hero .text-box .text-hero input {
+  padding: 10px 20px;
+  margin-right: 20px;
+  width: 60%;
+  border-radius: 20px;
+  box-shadow: none;
+  border: none;
+}
+.mailing-list .mailing-hero .text-box .text-hero input:focus {
+  outline: none;
+}
+.mailing-list .mailing-hero .text-box .text-hero a {
+  padding: 10px 50px;
+}

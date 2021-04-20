@@ -231,3 +231,44 @@
 
   }
 }
+
+// mailing list section
+
+.mailing-list{
+  .mailing-hero{
+    background-image: url('../img/banner.jpg');
+    .container{
+      width:$midContainer;
+      margin: 0 auto;
+    }
+    .text-box .text-hero{
+      margin-left:10%;
+      width:60%;
+      margin: 0 0;
+      h2{
+        font-size:$text-l;
+        color:$white;
+        margin: $mg 0;
+      }
+      h3{
+        color:$text-m;
+        color:$supTitle;
+      }
+      input{
+        padding: 10px 20px;
+        margin-right:$mg;
+        width: 60%;
+        border-radius:20px;
+        box-shadow: none;
+        border:none;
+        &:focus{
+          outline:none;
+        }
+      }
+      a{
+        padding:10px 50px;
+      }
+    }
+  }
+
+}

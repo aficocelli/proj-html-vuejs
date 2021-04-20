@@ -209,6 +209,10 @@ header {
   color: #fff;
   text-align: center;
 }
+.features .cit svg {
+  display: block;
+  margin: 0 auto;
+}
 .features .cit img {
   height: 50px;
   width: 50px;
@@ -401,6 +405,10 @@ header {
   color: 32px;
   color: #bc0428;
 }
+.mailing-list .mailing-hero .text-box .text-hero svg {
+  display: block;
+  margin: 20px 0;
+}
 .mailing-list .mailing-hero .text-box .text-hero input {
   padding: 10px 20px;
   margin-right: 20px;
@@ -503,6 +511,9 @@ header {
 }
 .motivational .container p:first-of-type {
   font-size: 32px;
+}
+.motivational .container svg {
+  margin: 20px 0;
 }
 .motivational .container p:last-of-type {
   font-size: 14px;

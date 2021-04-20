@@ -1,8 +1,4 @@
-// mani nav layout
-.container-md{
-  width: $midContainer;
-  margin:0 auto;
-}
+// main nav layout
 header{
   background-color: $dark-grey
 }
@@ -11,16 +7,18 @@ header{
   justify-content: space-between;
   align-items:center;
   height:80px;
+  // layout logo
   .logo {
     width:150px;
     & img{
       width:100%;
-
     }
   }
+  // menu + shop + search
   .navigation{
     display:flex;
     align-items: center;
+    // dynamic menu
     .main-menu ul{
       display:flex;
       align-items: center;
@@ -33,6 +31,7 @@ header{
         }
       }
     }
+    // btn + shop + search
     .shop a{
       margin-right:$mg;
       font-size:$text-xs;

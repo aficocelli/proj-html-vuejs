@@ -19,6 +19,11 @@ a {
   font-size: 32px;
 }
 
+.container {
+  width: 1080px;
+  margin: 0 auto;
+}
+
 .blue-btn {
   display: inline-block;
   padding: 10px 20px;
@@ -64,11 +69,6 @@ a {
 }
 .play-btn:focus {
   outline: none;
-}
-
-.container-md {
-  width: 1080px;
-  margin: 0 auto;
 }
 
 header {
@@ -124,10 +124,6 @@ header {
   background: white;
   background: linear-gradient(270deg, rgba(255, 255, 255, 0) 0%, #060606 58%);
 }
-.hero .text-box .text-hero {
-  width: 1080px;
-  margin: 0 auto;
-}
 .hero .text-box .text-hero h2 {
   color: #bc0428;
   font-size: 24px;
@@ -182,8 +178,9 @@ header {
   bottom: 0;
   right: 0;
   left: 0;
-  background-color: #00000054;
   border-radius: 5px 5px 40px 5px;
+  background: black;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.893995098) 14%, rgba(0, 0, 0, 0.1040791317) 67%);
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -191,43 +188,42 @@ header {
 }
 .features .box .box-img .text-img h3 {
   color: #fff;
+  margin-bottom: 5px;
 }
 .features .box .box-img .text-img p {
   color: #FFF941;
 }
-.features .box .box-img:nth-of-type(2) {
-  margin: 0 40px;
-}
-.features .cit {
+.features .quote {
   width: 750px;
   margin: 0 auto;
   text-align: center;
   padding: 100px 0;
 }
-.features .cit p:first-of-type {
+.features .quote p:first-of-type {
   font-size: 32px;
   color: #fff;
   text-align: center;
+  line-height: 46px;
 }
-.features .cit svg {
+.features .quote svg {
   display: block;
   margin: 0 auto;
 }
-.features .cit img {
+.features .quote img {
   height: 50px;
   width: 50px;
   border-radius: 50%;
 }
-.features .cit img, .features .cit span {
+.features .quote img, .features .quote span {
   vertical-align: middle;
 }
-.features .cit span:first-of-type {
+.features .quote span:first-of-type {
   color: #fff;
   font-size: 14px;
   font-weight: bold;
   margin: 0 20px;
 }
-.features .cit span:last-of-type {
+.features .quote span:last-of-type {
   color: #78787a;
   font-size: 14px;
   font-weight: bold;
@@ -264,8 +260,8 @@ header {
   bottom: 0;
   right: 0;
   left: 0;
-  background-color: #00000054;
   border-radius: 5px 5px 40px 5px;
+  background-color: #00000054;
 }
 .youtube .yt-text {
   padding: 50px;
@@ -325,10 +321,6 @@ header {
 .playlist {
   margin: 50px 0;
 }
-.playlist .container {
-  width: 1080px;
-  margin: 0 auto;
-}
 .playlist .title-playlist {
   display: flex;
   align-items: center;
@@ -387,10 +379,6 @@ header {
 .mailing-list .mailing-hero {
   background-image: url("../img/banner.jpg");
 }
-.mailing-list .mailing-hero .container {
-  width: 1080px;
-  margin: 0 auto;
-}
 .mailing-list .mailing-hero .text-box .text-hero {
   margin-left: 10%;
   width: 60%;
@@ -423,14 +411,15 @@ header {
 .mailing-list .mailing-hero .text-box .text-hero a {
   padding: 10px 50px;
 }
+.mailing-list .mailing-hero .text-box .text-hero p {
+  line-height: 30px;
+}
 
 .box-icons {
   padding: 70px 0;
   background-color: #060606;
 }
 .box-icons .container {
-  width: 1080px;
-  margin: 0 auto;
   display: flex;
   justify-content: space-between;
 }
@@ -499,7 +488,6 @@ header {
   bottom: 0;
   right: 0;
   left: 0;
-  background-color: #00000054;
   background: black;
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.2693452381) 0%, rgba(0, 0, 0, 0.7987570028) 66%);
 }
@@ -520,35 +508,37 @@ header {
   margin-bottom: 20px;
 }
 
-.gym .container {
-  width: 1080px;
-  margin: 80px auto;
+.gym {
+  padding: 80px 0;
 }
-.gym .container .gym-box {
+.gym .gym-box {
   display: flex;
   justify-content: space-between;
 }
-.gym .container .gym-box .box {
+.gym .gym-box .box {
   width: calc((100% / 4) - 40px);
   height: 200px;
   text-align: center;
 }
-.gym .container .gym-box .box .sponsor-img {
+.gym .gym-box .box .sponsor-img {
   width: 50%;
   margin: 0 auto;
 }
-.gym .container .gym-box .box .sponsor-img img {
+.gym .gym-box .box .sponsor-img img {
   width: 100%;
 }
-.gym .container .gym-box .box p {
+.gym .gym-box .box p {
   font-size: 14px;
   color: #78787a;
 }
-.gym .container .gym-box .box a {
+.gym .gym-box .box a {
   font-size: 14px;
   color: #000;
   margin-top: 20px;
   display: inline-block;
+}
+.gym .gym-box .box i {
+  margin-left: 5px;
 }
 
 .crossfit {
@@ -569,7 +559,6 @@ header {
   bottom: 0;
   right: 0;
   left: 0;
-  background-color: #00000054;
   background: #190046;
   background: linear-gradient(140deg, rgba(25, 0, 70, 0.6867121849) 75%, rgba(138, 0, 57, 0.6474964986) 90%);
 }

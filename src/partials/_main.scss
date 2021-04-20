@@ -4,6 +4,7 @@
 .features{
   background: rgb(160,6,68);
   background: linear-gradient(310deg, rgba(160,6,68,1) 27%, rgba(70,19,160,1) 60%, rgba(66,87,239,1) 81%);
+  // 3 box container
   .box{
     width:$midContainer;
     margin: 0 auto;
@@ -11,50 +12,57 @@
     justify-content: space-between;
     position: relative;
     top: -50px;
+    // layout single box
     .box-img{
       width:calc((100% / 3) - 80px);
       border-radius: 5px 5px 40px 5px;
       position:relative;
+      // layout img
       img{
         width:100%;
         height:100%;
         display: block;
         border-radius: 5px 5px 40px 5px;
       }
+      // text in the box
       .text-img{
         @include absolute-obj;
         border-radius: 5px 5px 40px 5px;
+        background: rgb(0,0,0);
+        background: linear-gradient(0deg, rgba(0,0,0,0.8939950980392157) 14%, rgba(0,0,0,0.10407913165266103) 67%);
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
         padding: $pd;
         h3{
           color:$white;
+          margin-bottom:5px;
         }
         p{
           color:$yellow;
         }
       }
     }
-    .box-img:nth-of-type(2){
-      margin: 0 40px;
-    }
   }
 
-  .cit{
+  // text with quote
+  .quote{
     width:750px;
     margin: 0 auto;
     text-align: center;
     padding: 100px 0;
+    // quote
     p:first-of-type{
       font-size:$text-m;
       color:$white;
       text-align: center;
+      line-height:46px;
     }
     svg{
       display:block;
       margin:0 auto;
     }
+    // image author
     img{
       height:50px;
       width:50px;
@@ -76,7 +84,6 @@
     }
   }
 
-
 }
 
 
@@ -84,12 +91,14 @@
 
 .youtube{
   display:flex;
+  // left video
   .yt-videos{
     position:relative;
     top:-50px;
     width:50%;
     height:600px;
     border-radius: 5px 5px 40px 5px;
+    // play button
     button{
       position:absolute;
       top:50%;
@@ -102,15 +111,17 @@
       object-fit: cover;
       border-radius: 5px 5px 40px 5px;
     }
+    // overlay
     &::before{
       content:"";
       display:block;
       @include absolute-obj;
       border-radius: 5px 5px 40px 5px;
+      background-color: #00000054;
     }
 
   }
-
+  // right text
   .yt-text{
     padding:50px;
     margin-left:80px;
@@ -132,12 +143,13 @@
     .youtube-btn{
       font-size:$text-xs;
       margin-right:10px;
-      background-color: #FF0000;
+      background-color: $youtubeColor;
       &:hover{
         background-color:$mainblue;
       }
 
     }
+    // youtube icon + view
     .yt-icon{
       display:flex;
       align-items:center;
@@ -152,9 +164,9 @@
       }
       span{
         color:$white;
-        background-color:#FF0000;
+        background-color:$youtubeColor;
         padding:2px;
-        border:1px solid #FF0000;
+        border:1px solid $youtubeColor;
         font-size:10px;
       }
       .views{
@@ -167,7 +179,6 @@
     }
   }
 
-
 }
 
 
@@ -175,10 +186,7 @@
 
 .playlist{
   margin: 50px 0;
-  .container{
-    width:$midContainer;
-    margin:0 auto;
-  }
+  // title section + link
   .title-playlist{
     display:flex;
     align-items: center;
@@ -197,12 +205,15 @@
     margin-top:$mg;
     display:flex;
     justify-content: space-between;
+    // box img + text
     .box-img{
       width:calc((100% / 3) - 40px);
       border-radius: 5px 5px 40px 5px;
       margin: $mg 0;
+      // box video
       .img-videos{
         position:relative;
+        // play button
         button{
           position:absolute;
           top:50%;
@@ -220,6 +231,7 @@
         display: block;
         border-radius: 5px 5px 40px 5px;
       }
+      // text under video
       .text-img{
         text-align: center;
         h3{
@@ -240,12 +252,10 @@
 // mailing list section
 
 .mailing-list{
+  // section with hero style
   .mailing-hero{
     background-image: url('../img/banner.jpg');
-    .container{
-      width:$midContainer;
-      margin: 0 auto;
-    }
+    // text layout
     .text-box .text-hero{
       margin-left:10%;
       width:60%;
@@ -263,6 +273,7 @@
         display:block;
         margin: $mg 0;
       }
+      // mail input + button
       input{
         padding: 10px 20px;
         margin-right:$mg;
@@ -277,6 +288,9 @@
       a{
         padding:10px 50px;
       }
+      p{
+        line-height:30px;
+      }
     }
   }
 
@@ -289,10 +303,9 @@
   padding: 70px 0;
   background-color: $dark-grey;
   .container{
-    width:$midContainer;
-    margin: 0 auto;
     display:flex;
     justify-content: space-between;
+    // single box
     .box{
       width:calc((100% / 3) - 40px);
       height:500px;
@@ -301,6 +314,7 @@
       padding:20px;
       color:$white;
       text-align: center;
+      // icon layout
       & > i{
         font-size:$text-l;
         margin: $mg 0;
@@ -324,9 +338,6 @@
           margin-left:10px;
         }
       }
-
-
-
     }
   }
 }
@@ -335,6 +346,7 @@
 
 .article{
   .container{
+    // playlist style section
     .videos-playlist{
       .img-videos{
         border-radius:none;
@@ -342,8 +354,9 @@
           border-radius:0 0 0 0;
         }
       }
+      // text layout
       .text-img{
-        padding: 20px;
+        padding: $pd;
         text-align: left;
         p{
           color:$textGrey;
@@ -365,6 +378,7 @@
   justify-content: center;
   align-items: center;
   position:relative;
+  // overlay
   &::after{
     content:"";
     display:block;
@@ -372,6 +386,7 @@
     background: rgb(0,0,0);
     background: linear-gradient(180deg, rgba(0,0,0,0.26934523809523814) 0%, rgba(0,0,0,0.7987570028011204) 66%);
   }
+  // text box
   .container{
     width:50%;
     text-align:center;
@@ -393,38 +408,41 @@
 // gym section
 
 .gym{
-  .container{
-    width:$midContainer;
-    margin: 80px auto;
-    .gym-box{
-      display:flex;
-      justify-content: space-between;
-      .box{
-        width:calc((100% / 4) - 40px);
-        height:200px;
-        text-align:center;
-        .sponsor-img{
-          width:50%;
-          margin:0 auto;
-          img{
-            width:100%;
-          }
+  padding:80px 0;
+  // 3 box content
+  .gym-box{
+    display:flex;
+    justify-content: space-between;
+    // single box
+    .box{
+      width:calc((100% / 4) - 40px);
+      height:200px;
+      text-align:center;
+      // sponsor image
+      .sponsor-img{
+        width:50%;
+        margin:0 auto;
+        img{
+          width:100%;
         }
-        p{
-          font-size:$text-xs;
-          color:$textGrey;
-        }
-        a{
-          font-size:$text-xs;
-          color:$black;
-          margin-top: $mg;
-          display:inline-block;
-        }
+      }
+      // text layout
+      p{
+        font-size:$text-xs;
+        color:$textGrey;
+      }
+      a{
+        font-size:$text-xs;
+        color:$black;
+        margin-top: $mg;
+        display:inline-block;
+      }
+      i{
+        margin-left:5px;
       }
     }
   }
 }
-
 
 // crossfit section
 
@@ -437,6 +455,7 @@
   background-position: center;
   background-size: cover;
   position:relative;
+  // overlay
   &::after{
     content:"";
     display:block;
@@ -444,9 +463,11 @@
     background: rgb(25,0,70);
     background: linear-gradient(140deg, rgba(25,0,70,0.6867121848739496) 75%, rgba(138,0,57,0.6474964985994398) 90%);
   }
+  // text box
   .box{
     z-index:1;
     text-align: center;
+    // text layout
     h3{
       font-size:$text-m;
       color:$white;

@@ -18,6 +18,13 @@ a{
   font-size:$text-m;
 }
 
+// container
+
+.container{
+  width:$midContainer;
+  margin:0 auto;
+}
+
 // MIXIN
 
 @mixin absolute-obj {
@@ -26,5 +33,4 @@ a{
   bottom:0;
   right:0;
   left:0;
-  background-color: #00000054;
 }

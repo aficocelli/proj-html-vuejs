@@ -1,3 +1,4 @@
+// vue js
 var app = new Vue ({
 
   el: '#root',
@@ -5,6 +6,8 @@ var app = new Vue ({
   data:{
 
     logo:"logo.png",
+
+    // menu voice
 
     menu:[
       {
@@ -40,8 +43,5 @@ var app = new Vue ({
     ],
 
   }
-
-
-
-
+  
 })

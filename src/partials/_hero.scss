@@ -4,15 +4,15 @@
   background-image: url("../img/hero.jpg");
   background-position: top;
   background-size: cover;
+  // text hero + overlay
   .text-box{
     display:flex;
     align-items: center;
     height:100%;
     background: rgb(255,255,255);
     background: linear-gradient(270deg, rgba(255,255,255,0) 0%, rgba(6,6,6,1) 58%);
+    // layoyt text
     .text-hero{
-      width:$midContainer;
-      margin:0 auto;
       h2{
         color:$supTitle;
         font-size:$text-s;
@@ -31,6 +31,7 @@
         font-size:$text-xs;
         margin-right:10px;
       }
+      // play button position
       .play-btn{
         position: absolute;
         top: 50%;

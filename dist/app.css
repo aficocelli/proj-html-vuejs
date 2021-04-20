@@ -519,3 +519,17 @@ header {
   font-size: 14px;
   margin-bottom: 20px;
 }
+
+.gym .container {
+  width: 1080px;
+  margin: 50px auto;
+}
+.gym .container .gym-box {
+  display: flex;
+  justify-content: space-between;
+}
+.gym .container .gym-box .box {
+  width: calc((100% / 4) - 40px);
+  height: 200px;
+  background-color: red;
+}

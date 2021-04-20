@@ -389,3 +389,21 @@
     }
   }
 }
+
+// gym section
+
+.gym{
+  .container{
+    width:$midContainer;
+    margin: 50px auto;
+    .gym-box{
+      display:flex;
+      justify-content: space-between;
+      .box{
+        width:calc((100% / 4) - 40px);
+        height:200px;
+        background-color:red;
+      }
+    }
+  }
+}

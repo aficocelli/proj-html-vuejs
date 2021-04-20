@@ -13,6 +13,12 @@ a {
   color: #78787a;
 }
 
+.wave {
+  color: #FFF941;
+  transform: rotate(90deg);
+  font-size: 32px;
+}
+
 .blue-btn {
   display: inline-block;
   padding: 10px 20px;
@@ -148,7 +154,6 @@ header {
 }
 
 .features {
-  height: 500px;
   background: #a00644;
   background: linear-gradient(310deg, #a00644 27%, #4613a0 60%, #4257ef 81%);
 }
@@ -167,6 +172,7 @@ header {
 }
 .features .box .box-img img {
   width: 100%;
+  height: 100%;
   display: block;
   border-radius: 5px 5px 40px 5px;
 }
@@ -196,8 +202,9 @@ header {
   width: 750px;
   margin: 0 auto;
   text-align: center;
+  padding: 100px 0;
 }
-.features .cit p {
+.features .cit p:first-of-type {
   font-size: 32px;
   color: #fff;
   text-align: center;
@@ -214,9 +221,23 @@ header {
   color: #fff;
   font-size: 14px;
   font-weight: bold;
+  margin: 0 20px;
 }
 .features .cit span:last-of-type {
   color: #78787a;
   font-size: 14px;
   font-weight: bold;
+}
+
+.youtube {
+  display: flex;
+}
+.youtube .yt-videos, .youtube .yt-text {
+  height: 200px;
+  width: 200px;
+  background-color: red;
+}
+.youtube .yt-videos {
+  position: relative;
+  top: -50px;
 }

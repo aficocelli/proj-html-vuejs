@@ -9,5 +9,11 @@ body{
 }
 a{
   text-decoration: none;
-  color:$textGray;
+  color:$textGrey;
+}
+// wave symbol
+.wave{
+  color:$yellow;
+  transform: rotate(90deg);
+  font-size:$text-m;
 }

@@ -2,7 +2,6 @@
 
 // features section
 .features{
-  height:500px;
   background: rgb(160,6,68);
   background: linear-gradient(310deg, rgba(160,6,68,1) 27%, rgba(70,19,160,1) 60%, rgba(66,87,239,1) 81%);
   .box{
@@ -18,6 +17,7 @@
       position:relative;
       img{
         width:100%;
+        height:100%;
         display: block;
         border-radius: 5px 5px 40px 5px;
       }
@@ -50,7 +50,8 @@
     width:750px;
     margin: 0 auto;
     text-align: center;
-    p{
+    padding: 100px 0;
+    p:first-of-type{
       font-size:$text-m;
       color:$white;
       text-align: center;
@@ -67,13 +68,34 @@
       color:$white;
       font-size:$text-xs;
       font-weight: bold;
+      margin: 0 $mg;
     }
     span:last-of-type{
-      color:$textGray;
+      color:$textGrey;
       font-size:$text-xs;
       font-weight: bold;
     }
   }
+
+
+}
+
+
+// youtube section
+
+.youtube{
+  display:flex;
+  .yt-videos, .yt-text{
+    height:200px;
+    width:200px;
+    background-color: red;
+  }
+  .yt-videos{
+    position:relative;
+    top:-50px;
+  }
+
+
 
 
 }

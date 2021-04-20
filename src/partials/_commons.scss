@@ -17,3 +17,14 @@ a{
   transform: rotate(90deg);
   font-size:$text-m;
 }
+
+// MIXIN
+
+@mixin absolute-obj {
+  position:absolute;
+  top:0;
+  bottom:0;
+  right:0;
+  left:0;
+  background-color: #00000054;
+}

@@ -591,3 +591,13 @@ header {
   height: 60px;
   width: 60px;
 }
+
+footer .container {
+  display: flex;
+  justify-content: space-between;
+}
+footer .container .box {
+  width: calc((100% / 3) - 40px);
+  height: 100px;
+  background-color: red;
+}

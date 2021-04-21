@@ -1,0 +1,14 @@
+// footer
+footer{
+
+  .container{
+    display:flex;
+    justify-content: space-between;
+    .box{
+      width:calc((100% / 3) - 40px);
+      height:100px;
+      background-color: red;
+    }
+  }
+
+}

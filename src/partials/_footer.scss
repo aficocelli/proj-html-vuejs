@@ -1,13 +1,38 @@
 // footer
 footer{
-
+  padding:80px;
+  background-color: $dark-grey;
+  color:$textGrey;
   .container{
     display:flex;
     justify-content: space-between;
     .box{
       width:calc((100% / 3) - 40px);
-      height:100px;
-      background-color: red;
+    }
+    .social{
+      text-align: center;
+      // logo layout
+      .logo{
+        width:200px;
+        margin: 0 auto;
+        img{
+          width:100%;
+        }
+      }
+      p{
+        margin: $mg 0;
+      }
+      .social-icons ul{
+        display:flex;
+        justify-content: center;
+        list-style-type: none;
+        li{
+          padding:10px;
+          a{
+            color:$supTitle;
+          }
+        }
+      }
     }
   }
 

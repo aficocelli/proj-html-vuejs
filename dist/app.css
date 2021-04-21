@@ -592,12 +592,39 @@ header {
   width: 60px;
 }
 
+footer {
+  padding: 80px;
+  background-color: #060606;
+  color: #78787a;
+}
 footer .container {
   display: flex;
   justify-content: space-between;
 }
 footer .container .box {
   width: calc((100% / 3) - 40px);
-  height: 100px;
-  background-color: red;
+}
+footer .container .social {
+  text-align: center;
+}
+footer .container .social .logo {
+  width: 200px;
+  margin: 0 auto;
+}
+footer .container .social .logo img {
+  width: 100%;
+}
+footer .container .social p {
+  margin: 20px 0;
+}
+footer .container .social .social-icons ul {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+}
+footer .container .social .social-icons ul li {
+  padding: 10px;
+}
+footer .container .social .social-icons ul li a {
+  color: #bc0428;
 }

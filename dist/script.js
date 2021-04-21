@@ -42,6 +42,45 @@ var app = new Vue ({
       },
     ],
 
+    socialIcons:[
+      {
+        id: 1,
+
+        name: "facebook",
+
+        link:"facebook-f"
+      },
+      {
+        id: 2,
+
+        name: "twitter",
+
+        link:"twitter"
+      },
+      {
+        id: 3,
+
+        name: "youtube",
+
+        link:"youtube"
+      },
+      {
+        id: 4,
+
+        name: "instagram",
+
+        link:"instagram"
+      },
+      {
+        id: 5,
+
+        name: "linkedin",
+
+        link:"linkedin-in"
+      }
+
+    ]
+
   }
-  
+
 })

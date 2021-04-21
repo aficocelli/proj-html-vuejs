@@ -80,4 +80,20 @@ footer{
     }
   }
 
+  // Copyright
+
+  .copyright{
+    text-align: center;
+    hr{
+      border: 1px solid $textGrey;
+      margin-top:80px;
+    }
+    p{
+      margin-top:$mg;
+      font-size:$text-xs;
+      span{
+        color:$white;
+      }
+    }
+  }
 }

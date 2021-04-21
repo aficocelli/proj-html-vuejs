@@ -662,3 +662,17 @@ footer .container .contact p:first-of-type {
 footer .container .contact p {
   color: #fff;
 }
+footer .copyright {
+  text-align: center;
+}
+footer .copyright hr {
+  border: 1px solid #78787a;
+  margin-top: 80px;
+}
+footer .copyright p {
+  margin-top: 20px;
+  font-size: 14px;
+}
+footer .copyright p span {
+  color: #fff;
+}

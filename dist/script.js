@@ -7,6 +7,7 @@ var app = new Vue ({
 
     logo:"logo.png",
 
+    price: 39,
     // menu voice
 
     menu:[

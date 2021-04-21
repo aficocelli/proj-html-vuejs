@@ -407,7 +407,12 @@
 
           <!-- recent post box -->
           <div class="box recent-post">
-
+            <h4>recent posts</h4>
+            <div class="post">
+              <ul>
+                <li v-for="post in posts"><a href=""><i class="fas fa-angle-right"></i>{{post.title}}</a></li>
+              </ul>
+            </div>
           </div>
           <!-- /recent post box -->
 

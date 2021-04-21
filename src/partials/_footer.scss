@@ -9,6 +9,7 @@ footer{
     .box{
       width:calc((100% / 3) - 40px);
     }
+    // social box
     .social{
       text-align: center;
       // logo layout
@@ -22,6 +23,7 @@ footer{
       p{
         margin: $mg 0;
       }
+      // layput icons
       .social-icons ul{
         display:flex;
         justify-content: center;
@@ -34,6 +36,26 @@ footer{
         }
       }
     }
+
+    // posts box
+
+    .recent-post{
+      text-align: center;
+      h4{
+        text-transform: uppercase;
+        color:$white;
+        font-size:$text-xs;
+        margin-bottom:10px;
+      }
+      ul li{
+        list-style-type: none;
+        padding: 10px 0;
+        i{
+          margin-right:5px;
+        }
+      }
+    }
+
   }
 
 }

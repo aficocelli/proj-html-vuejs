@@ -628,3 +628,19 @@ footer .container .social .social-icons ul li {
 footer .container .social .social-icons ul li a {
   color: #bc0428;
 }
+footer .container .recent-post {
+  text-align: center;
+}
+footer .container .recent-post h4 {
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+footer .container .recent-post ul li {
+  list-style-type: none;
+  padding: 10px 0;
+}
+footer .container .recent-post ul li i {
+  margin-right: 5px;
+}

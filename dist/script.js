@@ -42,6 +42,8 @@ var app = new Vue ({
       },
     ],
 
+    // social icons
+
     socialIcons:[
       {
         id: 1,
@@ -79,6 +81,41 @@ var app = new Vue ({
         link:"linkedin-in"
       }
 
+    ],
+
+    // recent posts
+
+    posts:[
+      {
+        id:1,
+
+        title:"The best protein shake"
+
+      },
+      {
+        id:2,
+
+        title:"Ultimate cardio workout"
+
+      },
+      {
+        id:3,
+
+        title:"New juices available now"
+
+      },
+      {
+        id:4,
+
+        title:"Tips to find training partners"
+
+      },
+      {
+        id:5,
+
+        title:"20 best healthy recipes"
+
+      },
     ]
 
   }

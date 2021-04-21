@@ -1,3 +1,4 @@
+// blue button
 .blue-btn{
   display:inline-block;
   padding: 10px 20px;
@@ -8,6 +9,7 @@
     background-color: $youtubeColor;
   }
 }
+// empty button
 .empty-btn{
   display:inline-block;
   padding: 10px 20px;
@@ -19,6 +21,7 @@
     color:$black;
   }
 }
+// menu label
 .new{
   color: $dark-grey;
   background-color: #FFF941;
@@ -27,6 +30,7 @@
   font-size:12px;
   margin-left:5px;
 }
+// play button
 .play-btn{
   height:80px;
   width:80px;
@@ -40,4 +44,18 @@
   &:focus{
     outline: none;
   }
+}
+
+// button back-to-top
+.back-to-top {
+  background-color:$textGrey;
+  padding: 5px 15px;
+  color:$white;
+  position:fixed;
+  bottom:0;
+  right:50px;
+  border:none;
+  font-size:$text-s;
+  border-radius:5px 5px 0 0;
+  opacity:0.7;
 }

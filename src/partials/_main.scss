@@ -16,12 +16,8 @@
     // layout single box
     .box-img{
       width:calc((100% / 3) - 80px);
-      height:300px;
       border-radius: 5px 5px 40px 5px;
       position:relative;
-      &:hover{
-        height:310px;
-      }
       // layout img
       img{
         width:100%;
@@ -320,7 +316,7 @@
       padding:20px;
       color:$white;
       text-align: center;
-      
+
       // icon layout
       & > i{
         font-size:$text-l;
@@ -360,6 +356,12 @@
         img{
           border-radius:0 0 0 0;
         }
+      }
+      .blog-img::after{
+        content:"";
+        display:block;
+        @include absolute-obj;
+        z-index:2;
       }
       // text layout
       .text-img{

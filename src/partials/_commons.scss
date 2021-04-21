@@ -34,3 +34,13 @@ a{
   right:0;
   left:0;
 }
+
+// effects
+
+.grow { transition: all .2s ease-in-out; }
+.grow:hover { transform: scale(1.1); }
+
+.hover-effect:hover .blog-img::after {
+  background: rgb(70,19,160);
+  background: linear-gradient(0deg, rgba(70,19,160,0.6222864145658263) 35%, rgba(0,0,0,0) 100%);
+}

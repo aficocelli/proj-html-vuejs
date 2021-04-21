@@ -418,7 +418,8 @@
 
           <!-- contact box -->
           <div class="box contact">
-
+            <h4>contact informations</h4>
+            <p v-for="info in contact"><span v-if="info.visible">{{info.type}}</span>{{info.value}}</p>
           </div>
           <!-- /contact box -->
         </div>

@@ -116,8 +116,27 @@ var app = new Vue ({
         title:"20 best healthy recipes"
 
       },
-    ]
+    ],
 
+    // contact
+
+    contact:[
+      {
+        type: "Address: ",
+        visible: false,
+        value: "4746 Tipple Road Michigan 48449"
+      },
+      {
+        type: "Mobile: ",
+        visible: true,
+        value: "1.800.000"
+      },
+      {
+        type: "Email: ",
+        visible: true,
+        value: "info@your-company.com"
+      },
+    ]
   }
 
 })

@@ -41,12 +41,14 @@ footer{
 
     .recent-post{
       text-align: center;
+      padding:10px 0;
       h4{
         text-transform: uppercase;
         color:$white;
         font-size:$text-xs;
         margin-bottom:10px;
       }
+      // posts
       ul li{
         list-style-type: none;
         padding: 10px 0;
@@ -56,6 +58,26 @@ footer{
       }
     }
 
+    // contact
+
+    .contact{
+      text-align: center;
+      padding:10px 0;
+      h4{
+        text-transform: uppercase;
+        color:$white;
+        font-size:$text-xs;
+        margin-bottom:10px;
+      }
+      p:first-of-type{
+        margin:$mg 0;
+        color:$lightGrey;
+      }
+      p{
+        color:$white;
+      }
+
+    }
   }
 
 }

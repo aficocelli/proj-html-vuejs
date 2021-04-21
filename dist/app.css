@@ -630,6 +630,7 @@ footer .container .social .social-icons ul li a {
 }
 footer .container .recent-post {
   text-align: center;
+  padding: 10px 0;
 }
 footer .container .recent-post h4 {
   text-transform: uppercase;
@@ -643,4 +644,21 @@ footer .container .recent-post ul li {
 }
 footer .container .recent-post ul li i {
   margin-right: 5px;
+}
+footer .container .contact {
+  text-align: center;
+  padding: 10px 0;
+}
+footer .container .contact h4 {
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+footer .container .contact p:first-of-type {
+  margin: 20px 0;
+  color: #bcbcbc;
+}
+footer .container .contact p {
+  color: #fff;
 }

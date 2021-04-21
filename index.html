@@ -23,7 +23,7 @@
     <!-- root container -->
     <div class="full-container" id="root">
       <!-- header -->
-      <header>
+      <header id="home">
         <!-- middle container -->
         <div class="container">
           <!-- main nav -->
@@ -40,7 +40,7 @@
               <!-- dynamic main menu -->
               <div class="main-menu">
                 <ul>
-                  <li v-for="item in menu"><a href="#">{{item.voice}}<span v-if="item.new" class="new">new</span></a></li>
+                  <li v-for="item in menu"><a :href=" '#' + item.link">{{item.voice}}<span v-if="item.new" class="new">new</span></a></li>
                 </ul>
               </div>
               <!-- /dynamic main menu -->
@@ -170,7 +170,7 @@
         <!-- /youtube section -->
 
         <!-- playlist section -->
-        <section class="playlist">
+        <section class="playlist" id="video">
           <div class="container">
             <!-- title playlist -->
             <div class="title-playlist">
@@ -241,7 +241,7 @@
         <!-- /mailing list section -->
 
         <!-- box icons section -->
-        <section class="box-icons">
+        <section class="box-icons" id="service">
           <div class="container">
             <div class="box">
               <i class="fas fa-stopwatch"></i>
@@ -269,7 +269,7 @@
         <!-- /box icons section -->
 
         <!-- article section -->
-        <section class="article playlist">
+        <section class="article playlist" id="blog">
 
           <div class="container">
             <!-- title playlist -->
@@ -330,7 +330,7 @@
         <!-- /motivational section -->
 
         <!-- gym section -->
-        <section class="gym container">
+        <section class="gym container" id="about">
             <div class="gym-box">
               <div class="box">
                 <div class="sponsor-img">

@@ -14,32 +14,38 @@ var app = new Vue ({
       {
         id:1,
         voice:"Home",
-        new:false
+        new:false,
+        link:"home"
       },
       {
         id:2,
         voice:"Services",
-        new:false
+        new:false,
+        link:"service"
       },
       {
         id:3,
         voice:"About",
-        new:false
+        new:false,
+        link:"about"
       },
       {
         id:4,
         voice:"Videos",
-        new:false
+        new:false,
+        link:"video"
       },
       {
         id:5,
         voice:"Blog",
-        new:false
+        new:false,
+        link:"blog"
       },
       {
         id:6,
         voice:"Store",
-        new:true
+        new:true,
+        link:""
       },
     ],
 

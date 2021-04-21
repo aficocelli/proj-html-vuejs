@@ -287,8 +287,11 @@
           outline:none;
         }
       }
-      a{
+      button{
         padding:10px 50px;
+        border:none;
+        outline:none;
+        cursor: pointer;
       }
       p{
         line-height:30px;

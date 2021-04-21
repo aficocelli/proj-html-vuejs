@@ -37,6 +37,14 @@ a {
   background: linear-gradient(0deg, rgba(70, 19, 160, 0.6222864146) 35%, rgba(0, 0, 0, 0) 100%);
 }
 
+.error {
+  color: red;
+}
+
+.success {
+  color: green;
+}
+
 .blue-btn {
   display: inline-block;
   padding: 10px 20px;
@@ -466,8 +474,11 @@ header {
 .mailing-list .mailing-hero .text-box .text-hero input:focus {
   outline: none;
 }
-.mailing-list .mailing-hero .text-box .text-hero a {
+.mailing-list .mailing-hero .text-box .text-hero button {
   padding: 10px 50px;
+  border: none;
+  outline: none;
+  cursor: pointer;
 }
 .mailing-list .mailing-hero .text-box .text-hero p {
   line-height: 30px;
@@ -736,4 +747,49 @@ footer .copyright p {
 }
 footer .copyright p span {
   color: #fff;
+}
+
+.carousel {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: #060606f0;
+  z-index: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.carousel .box-carousel {
+  z-index: 4;
+  height: 500px;
+  width: 50%;
+  position: relative;
+  border-radius: 5px;
+}
+.carousel .box-carousel img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 5px;
+}
+.carousel .slider-left, .carousel .slider-right {
+  font-size: 46px;
+  color: #fff;
+  opacity: 0.6;
+  margin: 0 20px;
+}
+.carousel .back {
+  position: absolute;
+  top: -35px;
+  right: -35px;
+  font-size: 32px;
+  color: #fff;
+  background-color: transparent;
+  border: none;
+  height: 40px;
+  width: 40px;
+  outline: none;
 }

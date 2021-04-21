@@ -1,0 +1,43 @@
+// carousel
+
+.carousel{
+  @include absolute-obj;
+  background-color: #060606f0;
+  z-index:3;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  .box-carousel{
+    z-index:4;
+    height:500px;
+    width:50%;
+    position:relative;
+    border-radius:5px;
+    img{
+      width:100%;
+      height:100%;
+      object-fit: cover;
+      border-radius:5px;
+    }
+  }
+  .slider-left, .slider-right{
+
+    font-size:$text-l;
+    color:$white;
+    opacity:0.6;
+    margin: 0 20px;
+
+  }
+  .back{
+    position:absolute;
+    top:-35px;
+    right:-35px;
+    font-size:$text-m;
+    color:$white;
+    background-color: transparent;
+    border:none;
+    height:40px;
+    width:40px;
+    outline: none;
+  }
+}

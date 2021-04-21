@@ -8,6 +8,21 @@ var app = new Vue ({
     logo:"logo.png",
 
     price: 39,
+
+    // carousel
+
+    images:["blog1.jpg", "blog2.jpg", "blog3.jpg", "video1.jpg", "video2.jpg", "video3.jpg",],
+
+    index:0,
+
+    demosOn:false,
+
+    // mailing
+
+    newMail:null,
+
+    reg: /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,24}))$/,
+
     // menu voice
 
     menu:[
@@ -143,7 +158,72 @@ var app = new Vue ({
         visible: true,
         value: "info@your-company.com"
       },
-    ]
+    ],
+
+    mailing:[],
+
+    mailOk: false,
+  },
+
+  methods:{
+
+    // carousel right button
+
+    rightBtn:function(){
+
+      this.index++;
+
+      if(this.index == this.images.length){
+
+        this.index = 0;
+      }
+
+    },
+
+    // carousel left button
+    leftBtn:function(){
+
+      this.index--;
+
+      if(this.index == -1){
+
+        this.index = this.images.length - 1;
+
+      }
+    },
+
+    // open carousel
+    playCarousel:function(){
+
+      this.demosOn = true;
+    },
+
+    // close carousel
+
+    stopCarousel:function(){
+
+      this.demosOn = false;
+    },
+
+    // add mail
+
+    validationMail:function(){
+
+      return (this.newMail == "")? "" : (this.reg.test(this.newMail)) ? this.mailOk = true : this.mailOk = false;
+
+    },
+    addMail: function(){
+      if(this.mailOk){
+
+        this.mailing.push(this.newMail);
+
+        this.newMail = null;
+
+      } else{
+        alert("mail errata");
+      }
+    }
+
   }
 
 })

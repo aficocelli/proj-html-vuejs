@@ -997,6 +997,7 @@ footer .copyright p span {
   color: #fff;
   opacity: 0.6;
   margin: 0 20px;
+  cursor: pointer;
 }
 .carousel .back {
   position: absolute;
@@ -1009,4 +1010,5 @@ footer .copyright p span {
   height: 40px;
   width: 40px;
   outline: none;
+  cursor: pointer;
 }

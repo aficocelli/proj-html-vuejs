@@ -29,7 +29,10 @@
           h1{
             font-size:$text-m;
           }
-          padding:$pd;
+          padding:5px;
+          a{
+            margin-bottom:5px;
+          }
         }
       }
     }
@@ -118,7 +121,7 @@
           h1{
             font-size:$text-m;
           }
-          padding:$pd;
+          padding:5px;
         }
       }
     }
@@ -327,7 +330,7 @@
         align-items:center;
         .box{
           width:100%;
-          margin-bottom:$mg;
+          margin-bottom:30px;
         }
       }
     }

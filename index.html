@@ -110,7 +110,7 @@
       <!-- /header -->
 
       <!-- main -->
-      <main>
+      <main v-if="demosOn == false">
         <!-- features section -->
         <section class="features">
           <div class="box">
@@ -415,7 +415,7 @@
       <!-- /main -->
 
       <!-- footer -->
-      <footer>
+      <footer v-if="demosOn == false">
         <div class="container">
           <!-- social icon box -->
           <div class="box social">

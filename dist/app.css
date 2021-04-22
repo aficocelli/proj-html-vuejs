@@ -111,14 +111,14 @@ a {
   }
 
   header .container .navbar {
+    display: block;
     padding: 10px;
   }
-  header .container .navbar .navigation {
+  header .container .navbar .shop {
     display: none;
   }
-  header .container .hamburger-menu {
-    display: inline-block;
-    color: #fff;
+  header .container .navbar .navigation .main-menu {
+    margin: 0 auto;
   }
   header .hero .text-box .text-hero {
     padding: 20px;
@@ -157,12 +157,6 @@ a {
     width: 100%;
   }
 
-  header .container .navbar {
-    padding: 10px;
-  }
-  header .container .navbar .navigation {
-    display: none;
-  }
   header .container .hamburger-menu {
     display: inline-block;
     color: #fff;
@@ -236,6 +230,13 @@ a {
   }
 }
 @media screen and (max-width: 600px) {
+  header .navbar .navigation .main-menu {
+    margin: 0 0;
+  }
+  header .navbar .navigation .main-menu ul li {
+    font-size: 12px;
+    margin: 0 5px;
+  }
   header .hero .text-box .demos {
     display: none;
   }

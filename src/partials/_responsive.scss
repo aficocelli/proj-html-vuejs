@@ -8,16 +8,20 @@
   header{
     .container{
       .navbar{
+        display:block;
         padding:10px;
-        .navigation{
+        .shop{
           display:none;
+        }
+        .navigation{
+          .main-menu{
+
+            margin:0 auto;
+          }
+
         }
       }
 
-      .hamburger-menu{
-        display:inline-block;
-        color:$white;
-      }
     }
     .hero{
       .text-box{
@@ -101,12 +105,7 @@
 
   header{
     .container{
-      .navbar{
-        padding:10px;
-        .navigation{
-          display:none;
-        }
-      }
+
 
       .hamburger-menu{
         display:inline-block;
@@ -227,6 +226,17 @@
 
 @media screen and (max-width:$screen-s) {
   header{
+    .navbar{
+      .navigation{
+        .main-menu{
+          margin:0 0;
+          ul li{
+            font-size:12px;
+            margin: 0 5px;
+          }
+        }
+      }
+    }
 
     .hero{
       .text-box{

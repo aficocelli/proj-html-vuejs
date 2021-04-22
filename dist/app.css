@@ -45,8 +45,14 @@ a {
   color: green;
 }
 
-.invisible {
-  display: none;
+.fixedNav {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  background-color: #060606;
+  width: 100%;
+  z-index: 3;
 }
 
 .blue-btn {
@@ -360,6 +366,7 @@ header {
 }
 
 .hero {
+  margin-top: 80px;
   height: 70vh;
   background-image: url("../img/hero.jpg");
   background-position: top;

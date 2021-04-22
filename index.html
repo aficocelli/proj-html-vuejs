@@ -25,7 +25,8 @@
       <!-- header -->
       <header id="home">
         <!-- middle container -->
-        <div class="container">
+        <div class="fixedNav"  v-if="showNavbar">
+          <div class="container">
           <!-- main nav -->
           <nav class="navbar">
 
@@ -57,6 +58,7 @@
 
           </nav>
           <!-- /main nav -->
+        </div>
         </div>
         <!-- /middle container -->
         <!-- hero -->

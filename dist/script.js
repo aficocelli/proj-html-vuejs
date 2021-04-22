@@ -163,6 +163,10 @@ var app = new Vue ({
     mailing:[],
 
     mailOk: false,
+
+    showNavbar: true,
+
+    lastScrollPosition: 0
   },
 
   methods:{
@@ -222,8 +226,31 @@ var app = new Vue ({
       } else{
         alert("mail errata");
       }
-    }
+    },
 
-  }
+    // scoll event
+    
+    handleScroll: function(){
+      let currentScrollPosition = window.pageYOffset || document.documentElement.scrollTop;
+      if (currentScrollPosition < 0) {
+        return
+      }
+      if (Math.abs(currentScrollPosition - this.lastScrollPosition) < 60) {
+        return
+      }
+      this.showNavbar = currentScrollPosition < this.lastScrollPosition;
+
+      this.lastScrollPosition = currentScrollPosition;
+
+    }
+  },
+
+  mounted(){
+    window.addEventListener('scroll', this.handleScroll);
+  },
+
+  beforeDestroy () {
+    window.removeEventListener('scroll', this.handleScroll);
+  },
 
 })

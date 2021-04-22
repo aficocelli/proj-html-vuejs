@@ -107,7 +107,7 @@ a {
 
 @media screen and (max-width: 1200px) {
   .container {
-    width: 500px;
+    width: 100%;
   }
 
   header .container .navbar {
@@ -130,12 +130,6 @@ a {
   main .features .box {
     display: none;
   }
-  main .youtube {
-    display: block;
-  }
-  main .youtube .yt-videos {
-    width: 100%;
-  }
   main .mailing-list .mailing-hero .text-box .text-hero h2 {
     font-size: 32px;
   }
@@ -151,6 +145,161 @@ a {
     width: calc((100% / 3) - 10px);
   }
 
+  .full-container footer .container {
+    flex-wrap: wrap;
+  }
+  .full-container footer .container .box {
+    width: 200px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .container {
+    width: 100%;
+  }
+
+  header .container .navbar {
+    padding: 10px;
+  }
+  header .container .navbar .navigation {
+    display: none;
+  }
+  header .container .hamburger-menu {
+    display: inline-block;
+    color: #fff;
+  }
+  header .hero .text-box .text-hero {
+    padding: 20px;
+  }
+  header .hero .text-box .text-hero h1 {
+    font-size: 32px;
+  }
+
+  main .features .box {
+    display: none;
+  }
+  main .features .quote {
+    width: 50%;
+  }
+  main .features .quote p:first-of-type {
+    font-size: 24px;
+  }
+  main .youtube {
+    display: block;
+  }
+  main .youtube .yt-videos {
+    width: 100%;
+  }
+  main .youtube .yt-text h2 {
+    font-size: 24px;
+  }
+  main .youtube .yt-text h3 {
+    font-size: 14px;
+  }
+  main .mailing-list .mailing-hero .text-box .text-hero {
+    padding: 10px;
+  }
+  main .mailing-list .mailing-hero .text-box .text-hero h3 {
+    font-size: 14px;
+  }
+  main .mailing-list .mailing-hero .text-box .text-hero h2 {
+    font-size: 24px;
+  }
+  main .mailing-list .mailing-hero .text-box .text-hero p {
+    display: none;
+  }
+  main .mailing-list .mailing-hero .text-box .text-hero button {
+    margin-top: 10px;
+  }
+  main .playlist .videos-playlist {
+    flex-direction: column;
+    align-items: center;
+  }
+  main .playlist .videos-playlist .box-img {
+    width: calc((100% / 2) - 20px);
+    padding: 20px;
+  }
+  main .box-icons .container {
+    flex-direction: column;
+    align-items: center;
+  }
+  main .box-icons .container .box {
+    width: 60%;
+    margin-bottom: 10px;
+  }
+
+  .full-container footer .container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .full-container footer .container .box {
+    width: 200px;
+  }
+}
+@media screen and (max-width: 600px) {
+  header .hero .text-box .demos {
+    display: none;
+  }
+  header .hero .text-box .sale {
+    display: none;
+  }
+  header .hero .text-hero {
+    text-align: center;
+  }
+  header .hero .text-hero button {
+    display: none;
+  }
+
+  main .features .box {
+    display: none;
+  }
+  main .features .quote {
+    width: 100%;
+  }
+  main .youtube .yt-text {
+    margin: 0 0;
+    padding: 0 0;
+  }
+  main .mailing-list .mailing-hero .text-box {
+    justify-content: center;
+  }
+  main .mailing-list .mailing-hero .text-box .text-hero {
+    text-align: center;
+  }
+  main .mailing-list .mailing-hero .text-box .text-hero h2 {
+    font-size: 24px;
+  }
+  main .mailing-list .mailing-hero .text-box .text-hero svg {
+    margin: 20px auto;
+  }
+  main .mailing-list .mailing-hero .text-box .text-hero input {
+    width: 100%;
+  }
+  main .playlist .videos-playlist {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  main .playlist .videos-playlist .box-img {
+    width: 100%;
+    padding: 20px;
+  }
+  main .box-icons .container .box {
+    width: 80%;
+  }
+  main .motivational .container {
+    width: 100%;
+  }
+  main .gym .gym-box {
+    flex-direction: column;
+    align-items: center;
+  }
+  main .gym .gym-box .box {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .full-container footer {
+    padding: 0;
+  }
   .full-container footer .container {
     flex-wrap: wrap;
   }

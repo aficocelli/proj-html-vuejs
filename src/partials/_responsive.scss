@@ -1,9 +1,10 @@
 // responsive
 
-@media screen and (max-width:1200px) {
+@media screen and (max-width:$screen-l) {
   .container{
-    width:500px;
+    width:100%;
   }
+
   header{
     .container{
       .navbar{
@@ -29,6 +30,7 @@
       }
     }
   }
+
   main{
 
     .features{
@@ -40,14 +42,7 @@
 
     }
 
-    .youtube{
-      display:block;
-      .yt-videos{
 
-        width:100%;
-
-      }
-    }
 
     .mailing-list{
       .mailing-hero{
@@ -87,6 +82,251 @@
   .full-container{
 
     footer{
+      .container{
+        flex-wrap: wrap;
+        .box{
+          width:200px;
+
+        }
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width:$screen-m) {
+  .container{
+    width:100%;
+  }
+
+  header{
+    .container{
+      .navbar{
+        padding:10px;
+        .navigation{
+          display:none;
+        }
+      }
+
+      .hamburger-menu{
+        display:inline-block;
+        color:$white;
+      }
+    }
+    .hero{
+      .text-box{
+        .text-hero{
+          h1{
+            font-size:$text-m;
+          }
+          padding:$pd;
+        }
+      }
+    }
+  }
+
+  main{
+
+    .features{
+
+      .box{
+
+        display:none;
+      }
+      .quote{
+        width:50%;
+        p:first-of-type{
+          font-size:$text-s;
+        }
+      }
+
+    }
+
+    .youtube{
+      display:block;
+      .yt-videos{
+
+        width:100%;
+
+      }
+      .yt-text{
+        h2{
+          font-size:$text-s;
+        }
+        h3{
+          font-size:$text-xs;
+        }
+      }
+    }
+
+    .mailing-list{
+      .mailing-hero{
+        .text-box{
+          .text-hero{
+            padding:10px;
+            h3{
+              font-size:$text-xs;
+            }
+            h2{
+              font-size:$text-s;
+            }
+            p{
+              display:none;
+            }
+            button{
+              margin-top:10px;
+            }
+
+          }
+        }
+      }
+    }
+
+    .playlist{
+      .videos-playlist{
+        flex-direction:column;
+        align-items:center;
+        .box-img{
+          width:calc((100% / 2) - 20px);
+          padding:20px;
+        }
+      }
+    }
+
+    .box-icons{
+      .container{
+        flex-direction:column;
+        align-items:center;
+        .box{
+          width:60%;
+          margin-bottom:10px;
+
+        }
+      }
+    }
+
+
+  }
+
+  .full-container{
+
+    footer{
+      .container{
+        flex-direction: column;
+        align-items: center;
+
+        .box{
+          width:200px;
+
+        }
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width:$screen-s) {
+  header{
+
+    .hero{
+      .text-box{
+        .demos{
+          display:none;
+        }
+        .sale{
+          display:none;
+        }
+      }
+      .text-hero{
+        button{
+          display:none;
+        }
+        text-align: center;
+      }
+    }
+  }
+
+  main{
+
+    .features{
+
+      .box{
+
+        display:none;
+      }
+      .quote{
+        width:100%;
+      }
+    }
+
+    .youtube{
+      .yt-text{
+        margin: 0 0 ;
+        padding: 0 0 ;
+      }
+    }
+
+    .mailing-list{
+      .mailing-hero{
+        .text-box{
+          justify-content: center;
+          .text-hero{
+            text-align: center;
+            h2{
+              font-size:$text-s;
+            }
+            svg{
+              margin: 20px auto;
+            }
+            input{
+              width:100%;
+            }
+          }
+        }
+      }
+    }
+
+    .playlist{
+      .videos-playlist{
+        flex-wrap: wrap;
+        justify-content: center;
+        .box-img{
+          width:100%;
+          padding:20px;
+        }
+      }
+    }
+
+    .box-icons{
+      .container{
+        .box{
+          width:80%;
+        }
+      }
+    }
+
+    .motivational{
+      .container{
+        width:100%;
+      }
+    }
+
+    .gym{
+      .gym-box{
+        flex-direction:column;
+        align-items:center;
+        .box{
+          width:100%;
+          margin-bottom:$mg;
+        }
+      }
+    }
+  }
+
+  .full-container{
+
+    footer{
+      padding:0;
       .container{
         flex-wrap: wrap;
         .box{

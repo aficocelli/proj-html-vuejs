@@ -1,43 +1,48 @@
 // main nav layout
-header{
-  background-color: $dark-grey
-}
-.navbar{
-  display:flex;
-  justify-content: space-between;
-  align-items:center;
-  height:80px;
-  // layout logo
-  .logo {
-    width:150px;
-    & img{
-      width:100%;
-    }
+
+  header{
+    background-color: $dark-grey
   }
-  // menu + shop + search
-  .navigation{
+  .navbar{
     display:flex;
-    align-items: center;
-    // dynamic menu
-    .main-menu ul{
+    justify-content: space-between;
+    align-items:center;
+    height:80px;
+    // layout logo
+    .logo {
+      width:150px;
+      & img{
+        width:100%;
+      }
+    }
+    // menu + shop + search
+    .navigation{
       display:flex;
       align-items: center;
-      list-style-type: none;
-      li{
-        margin: 0 $mg;
+      // dynamic menu
+      .main-menu ul{
+        display:flex;
+        align-items: center;
+        list-style-type: none;
+        li{
+          margin: 0 $mg;
+          font-size:$text-xs;
+          & a:hover{
+            color:$white;
+          }
+        }
+      }
+      // btn + shop + search
+      .shop a{
+        margin-right:$mg;
         font-size:$text-xs;
-        & a:hover{
+        &:hover{
           color:$white;
         }
       }
     }
-    // btn + shop + search
-    .shop a{
-      margin-right:$mg;
-      font-size:$text-xs;
-      &:hover{
-        color:$white;
-      }
-    }
   }
-}
+
+  .hamburger-menu{
+    display:none;
+  }

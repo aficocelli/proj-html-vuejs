@@ -1,0 +1,99 @@
+// responsive
+
+@media screen and (max-width:1200px) {
+  .container{
+    width:500px;
+  }
+  header{
+    .container{
+      .navbar{
+        padding:10px;
+        .navigation{
+          display:none;
+        }
+      }
+
+      .hamburger-menu{
+        display:inline-block;
+        color:$white;
+      }
+    }
+    .hero{
+      .text-box{
+        .text-hero{
+          h1{
+            font-size:$text-m;
+          }
+          padding:$pd;
+        }
+      }
+    }
+  }
+  main{
+
+    .features{
+
+      .box{
+
+        display:none;
+      }
+
+    }
+
+    .youtube{
+      display:block;
+      .yt-videos{
+
+        width:100%;
+
+      }
+    }
+
+    .mailing-list{
+      .mailing-hero{
+        .text-box{
+          .text-hero{
+
+            h2{
+              font-size:$text-m;
+            }
+
+          }
+        }
+      }
+    }
+
+    .playlist{
+      .videos-playlist{
+        flex-wrap: wrap;
+        justify-content: center;
+        .box-img{
+          width:calc((100% / 2) - 20px);
+          padding:20px;
+        }
+      }
+    }
+
+    .box-icons{
+      .container{
+        .box{
+          width:calc((100% / 3) - 10px);
+        }
+      }
+    }
+
+  }
+
+  .full-container{
+
+    footer{
+      .container{
+        flex-wrap: wrap;
+        .box{
+          width:200px;
+
+        }
+      }
+    }
+  }
+}
